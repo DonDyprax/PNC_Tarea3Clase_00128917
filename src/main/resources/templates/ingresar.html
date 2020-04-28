@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ingreso de nuevo alumno</title>
+</head>
+<body>
+
+	<h1>Ingreso de nuevo alumno</h1>
+	
+	<form action="POST" th:action="@{/validacion}">
+		<label for="names">Nombres: </label> &emsp; &emsp; &emsp; &ensp; <input id="names" name="names" type="text" placeholder="Juan Pablo" required/> 
+		<br>
+		<br>
+		<label for="lastNames">Apellidos: </label> &emsp; &emsp; &emsp; &ensp; <input id="lastNames" name="lastNames" type="text" placeholder="Acosta Valdivieso" required/>
+		<br>
+		<br>
+		<label for="dob">Fecha de Nacimiento: </label> <input id="dob" name="dob" type="date" placeholder="03/10/1998"required/>
+		<br>
+		<br>
+		<label for="pob">Lugar de Nacimiento: </label> <input id="pob" name="pob" type="text" placeholder="Santa Tecla" required/>
+		<br>
+		<br>
+		<label for="school">Lugar de Estudio: </label> &ensp; &ensp; <input id="school" name="school" type="text" placeholder="Colegio Lamatepec" required/>
+		<br>
+		<br>
+		<label for="phone">Telefono fijo: </label> &emsp; &emsp; &ensp; <input id="phone" name="phone" type="number" placeholder="22577777" required/>
+		<br>
+		<br>
+		<label for="cellphone">Telefono movil: </label> &emsp; &ensp; <input id="cellphone" name="cellphone" type="number" placeholder="78787878" required/>
+		<br>
+		<br>
+		<input type="submit" value="Guardar alumno">
+	</form>
+	
+</body>
+</html>

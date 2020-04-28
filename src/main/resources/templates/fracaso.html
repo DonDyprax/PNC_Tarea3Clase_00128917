@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ingreso de nuevo alumno</title>
+</head>
+<body>
+	<h1>Errores encontrados:</h1>
+	<table>
+		<tr th:each="err : ${errores}"> <td th:text="${err}"/> </tr>
+	</table>
+</body>
+</html>
